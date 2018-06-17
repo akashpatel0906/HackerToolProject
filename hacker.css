@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+body{
+	 width:1280px;
+	 background-image:url(background1.gif);
+	  
+   
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+
+#starttext {
+	font-family: "Courier New";
+	color:#FFFFFF;
+	padding-top:20px;
+	padding-left:10px;
+}
+
+#hackergif{
+	 z-index: 100;
+	 right: 0;
+	 position: fixed;	
+	 padding-right:75px;
+	}
+#hacker2gif{
+	 z-index: 100;
+	 right: 0;
+	 padding-top:250px;
+	 position: fixed;	
+	 padding-right:0px;
+	}
+#terminal{
+	color:#FFFFFF;
+	font-family:"Courier New";
+	margin-top:10px;
+	word-wrap:break-word;
+	line-spacing: 1px;
+	line-height: 2;
+	padding-bottom:40px;
+	max-width:1000px;
+	padding-top:20px;
+	padding-left:10px;
+	}
+#accessgranted{
+	color: #00C556;
+	text-align:center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:100px;;
+	background-color:black;
+	border: solid 1px green;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    height: 250;
+    margin-top: -200px;
+    width: 600px;
+    margin-left: -300px;
+}
+
+
+
+
+
+#accessdenied{
+	color: #FF0004;
+	text-align:center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:100px;;
+	background-color:black;
+	border: solid 1px #FF0004;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    height: 250;
+    margin-top: -200px;
+    width: 600px;
+    margin-left: -300px;
+}
+
+
+
+
+
+
+
+#timer{
+	color: #black;
+	text-align:center;
+	font-family:"Courier New";
+	font-size:50px;
+	background-color:red;
+	border: solid 1px black;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    height: 250;
+    margin-top: -100px;
+    width: 1000px;
+    margin-left: -500px;
+}
+#staticgif{
+	z-index: 100;
+	position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	}
+	
+
+#search{
+	text-align:center;
+	font-family:"Courier New", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, 	sans-serif;
+	font-size:100px;;
+	background-color:white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    margin-top: -100px;
+    width: 600px;
+    margin-left: -320px;
+}
+
+.search {
+  width: 100%;
+
+  position: relative
+  font-family:"Courier New", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, 		sans-serif;
+}
+
+#searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00FF42;
+  padding: 5px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  color: #000000;
+  font-size:50px;
+  font-family:"Courier New", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, 	sans-serif;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+  position: absolute; 
+  right: -50px;
+  width: 50px;
+  height: 66px;
+  background: #00C03A;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family:"Courier New", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+  font-weight:700;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#profilepic{
+	
+    position: fixed;
+    left: 45%;
+    top: 50%;
+    z-index: 100;
+    height: 225px;
+	padding-top:12px;
+    margin-top: -150px;
+    width: 200px;
+    margin-left: -400px;
+	
+	}
+	
+#profile{
+	color:#000000;
+	background-color:#FFFFFF;
+	border-radius:20px;
+	text-align:center;
+  font-family:"Courier New", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:25px;
+	background-color: #FFFFFF;
+    position: fixed;
+    left: 48%;
+    top: 50%;
+    z-index: 100;
+    height: 375px;
+    margin-top: -150px;
+    width: 400px;
+	
+	}
+#profilename{
+	color:# 000000;
+	background-color:#00FF88;
+	text-align:center;
+  font-family:"Courier New", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:50px;
+    position: fixed;
+    left: 30%;
+    top: 30%;
+    z-index: 100;
+    height: 70px;
+    margin-top: -150px;
+    width: 500px;
+	padding-top:10px;
+	}
+
+	
+	
+
+

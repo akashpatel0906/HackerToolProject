@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HAX</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<link href="home.css" rel="stylesheet" type="text/css">
+<link href="../hacker.css" rel="stylesheet" type="text/css">
+</head>
+<body class="bigbody">
+	<div class="full">
+	<div class="body"></div>
+    <h1 align="center" id="title"> 100% REAL TOOL FOR COOL HAX  </h1>
+    <div class="popup" id="tutorial" align="center" onclick="tutorial()">How to Use </div>
+
+    <div id="start" align="center"><a href="../main.html" id="start">START HACKER ATTACK </a></div>
+   <div id="myModal" class="modal">
+  <!-- Modal content -->
+  		<div class="modal-content">
+    	<span class="close">&times;</span>
+    	<p align="center" id="tabletitle">COMMANDS:  </p>
+        <table width="800" border="2" align="center" id="table">
+  <tr height="50">
+    <th scope="col" width="400" id="tutorial_title">KEY COMMAND</th>
+    <th scope="col" width="400" id="tutorial_title">ACTION</th>
+  </tr>
+  <tr align="center" height="75" style="padding:10px">
+    <td>Press "ENTER" 3 times</td>
+    <td>DISPLAYS: ACCESS GRANTED</td>
+  </tr>
+  <tr align="center" height="75">
+    <td>Press "SPACE" 3 times</td>
+    <td>DISPLAYS: ACCESS DENIED</td>
+  </tr>
+  <tr align="center" height="75">
+    <td>Press "CONTROL" 3 times</td>
+    <td>DISPLAYS: COUNTDOWN EXTERMINATION TIMER TO STATIC SCREEN (10s)</td>
+  </tr>
+  <tr align="center" height="75">
+    <td>Press "SHIFT" 3 times</td>
+    <td align="center" style="padding:7px; font-size:15px">DISPLAYS: PROFILE OF INDIVIDUAL SEARCHED<br> UPLOAD PROFILE PIC HERE: <br><input type="file" name="image" id="image-input"/> 
+    
+    
+    </td>
+    
+   
+  </tr>
+  		
+        
+
+</table>
+ 		</div>
+
+</div>
+
+<script>
+  
+var input = document.getElementById('image-input');
+input.onchange = function (event) {
+    var image = input.files[0];
+    if (image) {
+        var reader = new FileReader();
+        reader.onloadend = function () {
+            localStorage.setItem('image', reader.result);
+        }
+        reader.readAsDataURL(image);
+    }
+};
+
+
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("tutorial");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+	
+</script>
+
+   
+</body>
+
+
+
+
+</html>

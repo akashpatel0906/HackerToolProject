@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+.bigbody{
+	background-image:url(background.gif);
+	background-repeat:repeat;
+}
+.topbanner{
+	border: 25px solid #000000;
+	align:center;
+	opacity:0.2;
+	overflow-x: hidden;
+	background-color:#000000;
+	}
+.full{
+	width:1024px;
+	margin-left:auto;
+	margin-right:auto;}
+
+.body{
+	width:1024px;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#title{
+	font-size:80px;
+	padding-top:30px;
+	font-family: "Courier New";
+	z-index:100;
+	color:white;
+	}
+#tutorial{
+	color:white;
+	font-size:50px;
+    font-family: "Courier New";
+	background:green;
+	width:350px;
+	height:60px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:10px;
+	}
+#start{
+	color:white;
+	font-size:45px;
+    font-family: "Courier New";
+	background:red;
+	width:550px;
+	height:60px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:10px;
+	z-index:100;
+	text-decoration: none;
+	
+	}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #000000;
+    margin: auto;
+    padding-bottom: 50px;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 50px;
+	padding-right:15px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#tabletitle{
+	color:#FF0004;
+	font-size:50px;
+	font-family: "Courier New";
+	}
+#table{
+ 	color:#32C400;
+  font-family: "Courier New";
+  border-color:#FF0004;
+  border-width:thin;
+
+	}
+#tutorial_title{
+	color:#FFFFFF;
+	}

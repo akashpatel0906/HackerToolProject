@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HAX</title>
+<link href="hacker.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onkeydown="myFunction()">
+<div id="main" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="hackerscript.js"> </script>
+
+<!-- All the divs below represent the different "commands" when they pop up -->
+<div id="hackergif"><img src="hacker1.gif" width="200" height="247" alt=""/></div>
+<div id="hacker2gif"><img src="hacker2.gif" width="300" height="400" alt=""/></div>
+<div id="timer" class="access" style="display: none"></div>
+<div id="accessgranted" class="access" style="display: none; ">ACCESS GRANTED</div>
+<div id="accessdenied" class="access" style="display: none; ">ACCESS DENIED</div>
+<div id="search" class="access" style="display: none; ">
+ <div class="search">
+ <!-- Below is the "search" bar -->
+
+      <input type="text" id="searchTerm" placeholder="Person of Interest">
+      <button type="submit" class="searchButton" onclick="searcher()";> CLICK TO SEARCH
+        <i class="fa fa-search"></i>
+     </button>
+  </div>
+</div>
+
+<div id="profilepic" class="access" style="display: none; "><img id="target" width="400" height="400"alt="my image" /></div>
+<div id="profile" class="access" style="display: none; "> 
+<!-- Below is the "profile" finder -->
+
+	<p>
+    Swag: 0 out of 10 <br> <br> 
+Home: Kinda Shabby<br><br>
+Phone Number: 760-770-3103 <br><br>
+Zodiac: Cancer <br><br>
+MasterCard:5374 9957 2832  <br><br>
+Hacker Skills: -10/100</p>
+</div>
+
+<div id="profilename" style="display:none;" class="access"> Herro</div>
+
+<div id = "starttext"> Hack Initializing.../ </div>
+<!--Terminal is where the user types -->
+
+<div id="terminal"></div>
+</div>
+
+<div id="staticgif" style="display:none;"><img src="static.gif" alt="" id="staticgif"></div>
+
+<script>
+  document.getElementById('target').src = localStorage.getItem('image');
+  
+  
+</script>
+
+</body>
+
+</html>
